@@ -14,13 +14,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2");
-  font-display: swap;
-}
 
 @font-face {
   font-family: "PT Sans";
@@ -63,3 +56,24 @@ img {
   max-width: 100%;
   object-fit: contain;
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0 auto;
+  color: #293449;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #FFFFFF;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 115px;
+}
+
+
