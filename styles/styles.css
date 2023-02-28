@@ -31,11 +31,6 @@
   font-display: swap;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 
 .visually-hidden {
   position: absolute;
@@ -61,6 +56,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  min-width: 1400px;
   margin: 0 auto;
   color: #293449;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -76,4 +72,243 @@ body {
   padding: 0 115px;
 }
 
+.header {
+  position: relative;
+}
 
+.header-white {
+  background-color: #F3F7F9;
+  padding: 11px 0 13px 0;
+}
+
+.header-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: inherit;
+}
+
+.header-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #EE3643;
+  margin: 0;
+  margin-right: auto;
+  padding-left: 2px;
+  padding-top: 2px;
+  max-width: 600px;
+}
+
+.header-adress {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425C;
+  margin: 0;
+  margin-right: 33px;
+  max-width: 300px;
+}
+
+.header-phone {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #293449;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding-left: 24px;
+  max-width: 200px;
+  background-image: url(../images/icon/phone.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  background-position: center left;
+  margin: 0;
+  margin-right: 4px;
+}
+
+.header-dark-grey {
+  background-color: #293449;
+}
+
+.header-content {
+  display: flex;
+  flex-wrap: wrap;
+  background: inherit;
+}
+
+.header-logo {
+  display: block;
+  position: relative;
+  align-items: center;
+  width: max-content;
+  background: #EE3643;
+  padding: 12px 56px 15px;
+  box-shadow: 0 5px 0 #B52933;
+}
+
+.header-logo-img {
+  display: block;
+}
+
+.header-form-search {
+  position: relative;
+  margin-right: 17px;
+  flex-grow: 1;
+}
+
+.search-label {
+  display: flex;
+  position: relative;
+}
+
+.search-input {
+  width: 100%;
+  min-width: 400px;
+  padding: 11px 53px 10px;
+  border: 0;
+  color: #FFFFFF;
+  background: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.search-input::placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.search-input::-webkit-input-placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.search-input::-moz-placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.search-input::-moz-placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.search-input::-ms-input-placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.search-input-icon {
+  position: absolute;
+  color: #FFFFFF;
+  opacity: 0.3;
+  top: 12px;
+  left: 20px;
+}
+
+.header-form-search:focus-within .search-input {
+  color: #3D546F;
+  background-color: #F3F7F9;
+  outline: none;
+}
+
+.header-form-search:focus-within .search-input::placeholder {
+  color: #C5C5C5;
+}
+
+.header-form-search:focus-within .search-input ~ .search-input-icon{
+  color: #405069;
+  opacity: 1;
+}
+
+
+.header-log-in {
+}
+.header-dropdown {
+}
+.button {
+  display: block;
+  padding: 10px;
+  border: 0;
+  margin: 0;
+  border-radius: 4px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: none;
+}
+
+.log-in-button {
+  max-width: 200px;
+  color: #F1F5F7;
+  padding-left: 27px;
+  padding-right: 2px;
+  background-image: url(../images/icon/login.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 16px 16px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+  margin-right: auto;
+  justify-content: end;
+}
+.dropdown-form {
+  display: none;
+}
+.dropdown-title {
+}
+.dropdown-label {
+}
+.dropdown-input {
+}
+.dropdown-interaction {
+}
+.dropdown-interaction-checkbox {
+}
+.dropdown-checkbox {
+}
+.interaction-name {
+}
+.interaction-link {
+}
+.button-green {
+}
+.button-white {
+}
+.dropdown-close {
+}
