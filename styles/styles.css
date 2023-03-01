@@ -460,12 +460,15 @@ body {
   border-radius: 2px;
   background-color: #63A63E;
   color: #FFFFFF;
-  background-image: url(../images/icon/login.svg);
   background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.button-green-in {
+  background-image: url(../images/icon/login.svg);
   background-position: center left 32px;
   background-size: 16px 16px;
   padding-left: 27px;
-  cursor: pointer;
 }
 
 .button-green:hover {
@@ -526,4 +529,97 @@ body {
 .dropdown-close:active {
   opacity: 0.3;
   box-shadow: none;
+}
+
+.header-menu {
+
+}
+
+.header-light-grey {
+  background-color: #3D546F;
+}
+
+.header-menu-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 10px;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu-item {
+  min-height: 70px;
+}
+
+.menu-link {
+  display: block;
+  padding: 20px 23px 25px 23px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.menu-item:first-child .menu-link {
+  padding-left: 5px;
+}
+
+.menu-link:hover,
+.menu-user-item:hover {
+  background-color: #32425C;
+  color: #C5C5C5;
+  cursor: url(../images/cursor-pointer.svg);
+}
+
+.menu-link:active,
+.menu-user-item:active {
+  background-color: #32425C;
+  color: #FFFFFF;
+}
+
+.menu-user {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 17px;
+  margin-left: auto;
+}
+
+.menu-user-item {
+  min-height: 30px;
+  min-width: 30px;
+  background-size: 18px 18px;
+  background-position: top 22px center;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-repeat: no-repeat;
+}
+
+.menu-user-item-favorite {
+  min-height: 70px;
+  background-image: url(../images/icon/bookmark.svg);
+}
+
+.menu-user-item-cart {
+  min-height: 70px;
+  background-image: url(../images/icon/cart.svg);
+}
+
+.button-menu-user {
+  border-radius: 4px;
+  margin-right: 4px;
+  margin-top: -7px;
 }
