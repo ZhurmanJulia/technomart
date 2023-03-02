@@ -1,0 +1,30 @@
+const slides = document.querySelectorAll('.slider-item');
+const buttonPrev = document.querySelector('.slider-toogle-prev');
+const buttonNext = document.querySelector('.slider-toogle-next');
+const slidesAmount = slides.length;
+let currentIndex = 0;
+
+const onSlideChange = (index) => {
+  currentIndex = index;
+  const activeSlide = document.querySelector('.slider-item.active');
+
+  document.body.classList.add(`theme-${slides[index].dataset.theme}`);
+
+  activeSlide.classList.remove('active');
+  slides[index].classList.add('active');
+
+};
+
+buttonPrev.addEventListener('click', (e) => {
+  e.preventDefault();
+  currentIndex--;
+  currentIndex = (currentIndex < 0) ? slidesAmount - 1 : currentIndex;
+  onSlideChange(currentIndex);
+});
+
+buttonNext.addEventListener('click', (e) => {
+  e.preventDefault();
+  currentIndex++;
+  currentIndex = (currentIndex === slidesAmount) ? 0 : currentIndex;
+  onSlideChange(currentIndex);
+});
