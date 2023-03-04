@@ -467,7 +467,6 @@ body {
   opacity: 0.4;
 }
 
-
 .interaction-link {
   text-decoration: none;
   color: #000000;
@@ -491,7 +490,7 @@ body {
 
 .button-green:hover {
   background-color: #5FBB2D;
-  cursor: url(../images/cursor-pointer.svg);
+  cursor: url(../images/cursor-pointer.svg), pointer;
 }
 
 .button-green:active {
@@ -509,7 +508,7 @@ body {
 
 .button-white:hover {
   border-color: #3D546F;
-  cursor: url(../images/cursor-pointer.svg);
+  cursor: url(../images/cursor-pointer.svg), pointer;
 }
 
 .button-white:active {
@@ -536,7 +535,7 @@ body {
 
 .dropdown-close:hover {
   opacity: 0.6;
-  cursor: url(../images/cursor-pointer.svg);
+  cursor: url(../images/cursor-pointer.svg), pointer;
 }
 
 .dropdown-close:focus {
@@ -598,7 +597,7 @@ body {
 .menu-user-item:focus  {
   background-color: #32425C;
   color: #C5C5C5;
-  cursor: url(../images/cursor-pointer.svg);
+  cursor: url(../images/cursor-pointer.svg), pointer;
   outline: none;
 }
 
@@ -730,7 +729,7 @@ body {
 
 .services-button:hover {
   border-color: #3D546F;
-  cursor: url(../images/cursor-pointer.svg);
+  cursor: url(../images/cursor-pointer.svg), pointer;
   color: #3D546F;
   box-shadow: none;
 }
@@ -847,7 +846,7 @@ body {
 
 .button-red:hover {
   background-color: #CA2C37;
-  cursor: url(../images/cursor-pointer.svg);
+  cursor: url(../images/cursor-pointer.svg), pointer;
   box-shadow: none;
 }
 
@@ -890,7 +889,7 @@ body {
 .slider-toogle:hover {
   box-shadow: none;
   background-color: rgba(41, 52, 73, 1);
-  cursor: url(../images/cursor-pointer.svg);
+  cursor: url(../images/cursor-pointer.svg), pointer;
 }
 
 .slider-toogle:active {
@@ -1001,7 +1000,7 @@ body {
 
 .filter-button:hover {
   background-color: #518534;
-  cursor: url(../images/cursor-pointer.svg);
+  cursor: url(../images/cursor-pointer.svg), pointer;
 }
 
 .filter-button:active {
@@ -1157,6 +1156,7 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
+  margin-bottom: 33px;
 }
 
 .products-item {
@@ -1166,8 +1166,12 @@ body {
   padding: 27px 27px 23px;
 }
 
-.products-item.services-item-new {
+.products-item:hover {
+  box-shadow: 0 4px 13px rgba(0, 0, 0, 0.25);
+}
 
+.products-item:hover .products-image {
+  opacity: 0.1;
 }
 
 .products-image {
@@ -1231,6 +1235,106 @@ body {
   transform: rotate(-45deg);
 }
 
+.products-price-button:focus,
+.products-price-button:focus::after{
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.products-price-button:hover {
+  background-color: #CA2C37;
+  cursor: url(../images/cursor-pointer.svg), pointer;
+}
+
+.products-price-button:hover::after{
+  border-color: transparent #CA2C37 #CA2C37 transparent;
+}
+
+.products-price-button:active {
+  background-color: #BA2732;
+}
+
+.products-price-button:active::after{
+  border-color: transparent #BA2732 #BA2732 transparent;
+}
+
 .products-more {
+  position: absolute;
   display: none;
+  flex-direction: column;
+  gap: 11px;
+  top: 63px;
+  left: 65px;
+}
+
+.products-item:hover .products-more  {
+  display: flex;
+}
+
+.products-button {
+  padding: 9px 14px 9px 15px;
+}
+
+.products-button-buy {
+  padding: 11px 12px 11px 15px;
+  padding-left: 30px;
+  border-radius: 0;
+  background-image: url(../images/buttton-buy-cart-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center left 22px;
+  background-size: 14px 14px;
+}
+
+.catalog-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 223px;
+  padding-right: 208px;
+}
+
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  margin-right: 15px;
+  list-style-type: none;
+}
+
+.pagination-link {
+  box-sizing: border-box;
+  display: block;
+  width: 50px;
+  height: 45px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #3D546F;
+  border-radius: 2px;
+  text-decoration: none;
+  padding: 15px 0 14px;
+}
+
+.pagination-item.current .pagination-link {
+  color: #3D546F;
+  background-color: #FFFFFF;
+}
+
+.pagination-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.pagination-button {
+  display: block;
+  min-width: 195px;
+  padding: 14px 38px 13px;
+  border-radius: 2px;
+  font-size: 14px;
+  line-height: 18px;
 }
