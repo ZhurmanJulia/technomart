@@ -1338,3 +1338,103 @@ body {
   font-size: 14px;
   line-height: 18px;
 }
+
+.pagination-item:focus {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.pagination-link:focus {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.pagination-link:hover {
+  background-color: #32425C;
+  cursor: url(../images/cursor-pointer.svg), pointer;
+}
+
+.pagination-item:active {
+  background-color: #293449;
+}
+
+.pagination-item.current:hover {
+  opacity: 1;
+  pointer-events: none;
+}
+
+.offers {
+  background-color: #F4F7F9;
+  padding: 54px 0;
+}
+
+.offers-title {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #293449;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.offers-description {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #293449;
+  margin: 0 auto 64px;
+  max-width: 556px;
+}
+
+.offers-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.offers-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  padding: 24px 31px 50px;
+}
+
+.offers-item-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425C;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.offers-item-text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+}
+
+.offers-image {
+  order: -1;
+  margin-bottom: 47px;
+  color: #CA2C37;
+}
