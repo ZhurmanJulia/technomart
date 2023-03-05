@@ -1438,3 +1438,47 @@ body {
   margin-bottom: 47px;
   color: #CA2C37;
 }
+
+.contacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 170px;
+  padding-top: 52px;
+  padding-bottom: 48px;
+}
+
+.contacts-title {
+  font-family: "Fira Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #293449;
+  margin: 0;
+  margin-bottom: 23px;
+}
+
+.about-us-text,
+.address-text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #293449;
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.address-link {
+  display: block;
+  cursor: url(../images/cursor-pointer.svg), pointer;
+}
+
+.about-us-button {
+  display: inline-block;
+  padding: 14px 45px;
+  border-radius: 2px;
+  margin-top: 24px;
+}
