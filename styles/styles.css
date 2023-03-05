@@ -145,7 +145,7 @@ body {
   background: inherit;
 }
 
-.header-logo {
+.logo {
   display: block;
   position: relative;
   align-items: center;
@@ -155,7 +155,7 @@ body {
   box-shadow: 0 5px 0 #B52933;
 }
 
-.header-logo-img {
+.logo-img {
   display: block;
 }
 
@@ -1474,6 +1474,21 @@ body {
 .address-link {
   display: block;
   cursor: url(../images/cursor-pointer.svg), pointer;
+}
+
+.address-image {
+  display: block;
+  object-fit: contain;
+}
+
+.address-link:focus,
+.address-link:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.address-link:active {
+  opacity: 0.3;
 }
 
 .about-us-button {
