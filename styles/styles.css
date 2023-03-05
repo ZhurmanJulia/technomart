@@ -66,6 +66,9 @@ body {
   background-color: #FFFFFF;
 }
 
+main {
+  flex-grow: 1;
+}
 
 .container {
   width: 1170px;
@@ -318,6 +321,20 @@ body {
   cursor: pointer;
 }
 
+.log-in-button:focus {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.log-in-button:hover {
+  opacity: 0.6;
+  cursor: url(../images/cursor-pointer.svg), pointer;
+}
+
+.log-in-button:active {
+  opacity: 0.3;
+}
+
 .header-dropdown {
   position: relative;
 }
@@ -328,7 +345,6 @@ body {
 
 .dropdown-form {
   position: absolute;
-  box-sizing: border-box;
   display: none;
   right: 0;
   top: 12px;
@@ -1709,4 +1725,113 @@ body {
 .subscription-button:focus {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   outline: none;
+}
+
+.button-user {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #F1F5F7;
+  max-width: 250px;
+  margin-left: 10px;
+  padding: 10px 0 10px 26px;
+  letter-spacing: normal;
+  text-transform: capitalize;
+  background-image: url(../images/icon/user.svg);
+}
+
+.button-user:focus {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.button-user:hover {
+  opacity: 0.6;
+  cursor: url(../images/cursor-pointer.svg), pointer;
+}
+
+.button-user:active {
+  opacity: 0.3;
+}
+
+.user-title {
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.user-button {
+  max-width: max-content;
+  padding: 9px 47px 9px 47px;
+}
+
+.user-link {
+  max-width: max-content;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #3D546F;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 23px;
+}
+
+.user-link:hover {
+  opacity: 0.6;
+}
+
+.user-link:active {
+  opacity: 0.3;
+}
+
+.user-link:focus{
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.button-log-out {
+  margin-left: 15px;
+  background-image: url(../images/icon/login.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: rotate(180deg);
+}
+
+
+.favorite-user,
+.cart-user {
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-position: top 26px left 4px;
+}
+
+
+
+.menu-user-counter {
+  position: absolute;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  top: 26px;
+  left: 27px;
+}
+
+.counter-cart {
+  padding-left: 6px;
+}
+
+.counter-favorite {
+  padding-left: 3px;
 }
