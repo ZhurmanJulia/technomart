@@ -212,6 +212,7 @@ main {
   color: #FFFFFF;
 }
 
+
 .search-input::-webkit-input-placeholder {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -264,6 +265,7 @@ main {
 
 .header-form-search:focus-within .search-input::placeholder {
   color: #C5C5C5;
+  content: "fgfdhfd";
 }
 
 .header-form-search:focus-within .search-input ~ .search-input-icon{
@@ -339,21 +341,21 @@ main {
   position: relative;
 }
 
-.header-dropdown:focus-within .dropdown-form {
-  display: block;
-}
-
 .dropdown-form {
   position: absolute;
   display: none;
-  right: 0;
-  top: 12px;
+  right: 2px;
+  top: 13px;
   z-index: 2;
   min-width: 300px;
   padding: 22px 29px 35px 31px;
   border-radius: 2px;
   background: #FFFFFF;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-form.is-open {
+  display: block;
 }
 
 .dropdown-title {
@@ -365,7 +367,7 @@ main {
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 48px;
 }
 
 .dropdown-label {
@@ -374,12 +376,12 @@ main {
 }
 
 .dropdown-label:last-of-type {
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 }
 
 .dropdown-input {
   min-width: 280px;
-  padding: 7px 14px;
+  padding: 7px 5px 7px 14px;
   border: 1px solid #C5C5C5;
   border-radius: 2px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -436,21 +438,27 @@ main {
 .dropdown-interaction {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5px;
+  gap: 25px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: #000000;
+  margin-bottom: 39px;
+}
+
+.dropdown-interaction-buttons {
+  margin-bottom: 0;
+  margin-left: -4px;
+  gap: 0;
 }
 
 
 .dropdown-interaction-checkbox {
   position: relative;
   display: block;
-  padding-left: 32px;
-  margin-bottom: 39px;
+  padding-left: 37px;
   cursor: pointer;
 }
 
@@ -505,8 +513,14 @@ main {
 }
 
 .interaction-link {
+  display: block;
   text-decoration: none;
   color: #000000;
+}
+
+.interaction-link:focus {
+  outline: none;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .button-green {
@@ -520,9 +534,10 @@ main {
 
 .button-green-in {
   background-image: url(../images/icon/login.svg);
-  background-position: center left 32px;
+  background-position: center left 24px;
   background-size: 16px 16px;
-  padding-left: 27px;
+  padding: 9px 10px 9px 31px;
+  margin-right: 10px;
 }
 
 .button-green:hover {
@@ -541,6 +556,12 @@ main {
   border-radius: 2px;
   text-align: center;
   background: #FFFFFF;
+}
+
+.button-white-in {
+  max-width: max-content;
+  padding: 9px 14px 9px 16px;
+  margin-left: -3px;
 }
 
 .button-white:hover {
@@ -638,7 +659,6 @@ main {
   outline: none;
 }
 
-
 .menu-link:active,
 .menu-user-item:active {
   background-color: #32425C;
@@ -675,8 +695,9 @@ main {
 
 .button-menu-user {
   border-radius: 4px;
-  margin-right: 4px;
+  margin-right: 2px;
   margin-top: -7px;
+  padding: 12px 13px 12px 12px;
 }
 
 .services {
@@ -729,7 +750,6 @@ main {
   right: 37px;
   top: 45px;
 }
-
 
 .services-button {
   position: relative;
@@ -1078,7 +1098,6 @@ main {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   outline: none;
 }
-
 
 .catalog-filters-list {
   margin: 0;
@@ -1735,8 +1754,8 @@ main {
   line-height: 24px;
   color: #F1F5F7;
   max-width: 250px;
-  margin-left: 10px;
-  padding: 10px 0 10px 26px;
+  margin-right: 2px;
+  padding: 9px 0 12px 24px;
   letter-spacing: normal;
   text-transform: capitalize;
   background-image: url(../images/icon/user.svg);
@@ -1809,9 +1828,8 @@ main {
   position: relative;
   padding-right: 10px;
   padding-left: 10px;
-  background-position: top 26px left 4px;
+  background-position: top 22px left 3px;
 }
-
 
 
 .menu-user-counter {
@@ -1824,12 +1842,14 @@ main {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #FFFFFF;
-  top: 26px;
-  left: 27px;
+  top: 22px;
+  left: 26px;
 }
 
 .counter-cart {
+  padding-right: 10px;
   padding-left: 6px;
+  left: 22px;
 }
 
 .counter-favorite {
